@@ -9,3 +9,4 @@ Use `docker compose up -d` to start the Nginx server, and access `http://localho
 
 * OpenResty: https://openresty.org/
 * OpenResty package manager: https://opm.openresty.org/
+* docker-openresty - Docker tooling for OpenResty: https://github.com/openresty/docker-openresty
