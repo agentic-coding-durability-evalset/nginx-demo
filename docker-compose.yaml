@@ -1,0 +1,8 @@
+services:
+  openresty:
+    image: openresty/openresty:jammy
+    ports:
+      - "9080:9080"
+    volumes:
+      - ./conf:/usr/local/openresty/nginx/conf:ro
+      - ./www:/usr/local/openresty/nginx/html:ro
