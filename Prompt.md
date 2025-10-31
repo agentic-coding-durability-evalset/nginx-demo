@@ -1,15 +1,17 @@
-# 新需求
+# New Requirement
 
-请为OpenResty的`conf/nginx.conf`配置文件添加JWT Validation:
+Please add JWT Validation to OpenResty's `conf/nginx.conf` configuration file:
 
-- 使用lua编写
-- JWT的算法为HS256，对应的秘钥为`my_secret_key`
-- 要拦截的路径为`/api/v1/*`
+- Use Lua for implementation
+- JWT algorithm is HS256, with the secret key being `my_secret_key`
+- Intercept paths matching `/api/v1/*`
 
-# 新需求
+# New Requirement
 
-请协助完成nginx的https证书的配置：
+Please assist with configuring nginx HTTPS certificates:
 
-- 域名为: `my.example.com`
-- 证书: `certs/my.example.com.crt`
-- 证书private key文件: `certs/my.example.com.key`
+- Domain: `my.example.com`
+- Certificate: `certs/my.example.com.crt`
+- Certificate private key file: `certs/my.example.com.key`
+
+
