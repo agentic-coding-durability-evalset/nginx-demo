@@ -1,4 +1,4 @@
-# 新需求
+# 新需求 1
 
 请为OpenResty的`conf/nginx.conf`配置文件添加JWT Validation:
 
@@ -6,7 +6,7 @@
 - JWT的算法为HS256，对应的秘钥为`my_secret_key`
 - 要拦截的路径为`/api/v1/*`
 
-# 新需求
+# 新需求 2
 
 请协助完成nginx的https证书的配置：
 

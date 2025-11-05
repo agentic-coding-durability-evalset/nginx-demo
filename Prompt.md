@@ -1,4 +1,4 @@
-# New Requirement
+# New Requirement 1
 
 Please add JWT Validation to OpenResty's `conf/nginx.conf` configuration file:
 
@@ -6,7 +6,7 @@ Please add JWT Validation to OpenResty's `conf/nginx.conf` configuration file:
 - JWT algorithm is HS256, with the secret key being `my_secret_key`
 - Intercept paths matching `/api/v1/*`
 
-# New Requirement
+# New Requirement 2
 
 Please assist with configuring nginx HTTPS certificates:
 
