@@ -1,89 +1,84 @@
 # Nginx Demo
 
-一个基于 [Nginx](https://nginx.org/) 和 [OpenResty](https://openresty.org/) 的 Web 服务器配置示例项目。展示了如何使用 Nginx/OpenResty 进行反向代理、负载均衡和 Lua 脚本扩展。
+A Web server configuration demo project based on [Nginx](https://nginx.org/) and [OpenResty](https://openresty.org/). Demonstrates how to use Nginx/OpenResty for reverse proxy, load balancing, and Lua script extensions.
 
-## 技术栈
+## Tech Stack
 
-- **Nginx**: Web 服务器
-- **OpenResty**: 基于 Nginx 的 Web 平台，集成了 LuaJIT
-- **Docker**: 容器化部署
-- **Lua**: 脚本语言（通过 OpenResty）
+- **Nginx**: Web server
+- **OpenResty**: Web platform based on Nginx, integrated with LuaJIT
+- **Docker**: Containerized deployment
+- **Lua**: Scripting language (via OpenResty)
 
-## 项目结构
+## Project Structure
 
 ```
 nginx-demo/
 ├── conf/
-│   ├── nginx.conf        # Nginx 主配置文件
-│   └── mime.types        # MIME 类型配置
-├── www/                  # Web 根目录
-│   └── index.html        # 示例 HTML 文件
-├── docker-compose.yaml   # Docker Compose 配置
-├── justfile              # Just 构建工具配置
+│   ├── nginx.conf        # Nginx main configuration file
+│   └── mime.types        # MIME type configuration
+├── www/                  # Web root directory
+│   └── index.html        # Example HTML file
+├── docker-compose.yaml   # Docker Compose configuration
+├── justfile              # Just build tool configuration
 └── README.md
 ```
 
-## 功能特性
+## Features
 
-- Nginx 反向代理
-- 静态文件服务
-- OpenResty Lua 支持
-- Docker 容器化
-- 配置示例
+- Nginx reverse proxy
+- Static file serving
+- OpenResty Lua support
+- Docker containerization
+- Configuration examples
 
-## 快速开始
+## Quick Start
 
-### 前置要求
+### Prerequisites
 
-- Docker 和 Docker Compose
+- Docker and Docker Compose
 
-### 安装和运行
+### Installation and Running
 
 ```bash
-# 克隆项目
-git clone <repository-url>
-cd nginx-demo
-
-# 启动 Nginx 服务器
+# Start Nginx server
 docker compose up -d
 
-# 查看日志
+# View logs
 docker compose logs -f
 
-# 停止服务器
+# Stop server
 docker compose down
 ```
 
-服务器将在 `http://localhost:9080` 启动。
+The server will start at `http://localhost:9080`.
 
-### 访问应用
+### Access Application
 
-打开浏览器访问：
-- **主页**: http://localhost:9080
-- **静态文件**: http://localhost:9080/index.html
+Open browser and visit:
+- **Home**: http://localhost:9080
+- **Static files**: http://localhost:9080/index.html
 
-## 项目特点
+## Project Features
 
-### Nginx 配置
+### Nginx Configuration
 
-主配置文件 `conf/nginx.conf` 包含：
-- 服务器块配置
-- 位置块配置
-- 静态文件服务
-- 日志配置
+Main configuration file `conf/nginx.conf` includes:
+- Server block configuration
+- Location block configuration
+- Static file serving
+- Logging configuration
 
-### OpenResty 特性
+### OpenResty Features
 
-OpenResty 提供了额外的功能：
-- **Lua 脚本**: 在 Nginx 中运行 Lua 代码
-- **动态配置**: 运行时配置修改
-- **扩展模块**: 丰富的第三方模块
+OpenResty provides additional functionality:
+- **Lua Scripts**: Run Lua code in Nginx
+- **Dynamic Configuration**: Runtime configuration modifications
+- **Extension Modules**: Rich third-party modules
 
+## References
 
-## 参考资源
-
-- [Nginx 文档](https://nginx.org/en/docs/)
-- [OpenResty 官方网站](https://openresty.org/)
-- [OpenResty 包管理器](https://opm.openresty.org/)
+- [Nginx Documentation](https://nginx.org/en/docs/)
+- [OpenResty Official Website](https://openresty.org/)
+- [OpenResty Package Manager](https://opm.openresty.org/)
 - [docker-openresty](https://github.com/openresty/docker-openresty)
-- [OpenResty Lua 文档](https://github.com/openresty/lua-nginx-module)
+- [OpenResty Lua Documentation](https://github.com/openresty/lua-nginx-module)
